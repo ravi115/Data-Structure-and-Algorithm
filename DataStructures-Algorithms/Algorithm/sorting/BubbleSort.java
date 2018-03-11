@@ -1,4 +1,4 @@
-package sorting;
+package Sorting;
 
 /**
  * This class will provide bubble sort solution with variety of approach.

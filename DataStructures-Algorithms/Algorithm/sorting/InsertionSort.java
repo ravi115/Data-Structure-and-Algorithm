@@ -1,4 +1,4 @@
-package sorting;
+package Sorting;
 
 /**
  * This class implements the insertion sort algorithm.

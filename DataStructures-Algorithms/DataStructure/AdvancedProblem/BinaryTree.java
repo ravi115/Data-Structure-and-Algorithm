@@ -1,4 +1,4 @@
-package Trees;
+package AdvancedProblem;
 
 /**
  * Represents Structure  of Binary Tree.

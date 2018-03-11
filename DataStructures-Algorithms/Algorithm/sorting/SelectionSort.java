@@ -1,4 +1,4 @@
-package sorting;
+package Sorting;
 
 /**
  * This class provides the solution for selection sort algorithm.
