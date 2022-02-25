@@ -6,31 +6,31 @@ All Data Structure and Algorithm program.
 
 -------------------------------------------------------------------------------------------------------------------------------
 ** Binary search:
-	- problem is to find key element by splting into array into two halfs. recursively/iteratively(left array | right array)
-	- mid = start + (end - start)/2
-	- arr[mid] == key; return index mid
-	- arr[mid] > key; BS(left, key)
-	- arr[mid] < key; BS(right, key)
-	------------------------------------------------------------------------------------------------------------------------------
+- problem is to find key element by splting into array into two halfs. recursively/iteratively(left array | right array)
+- mid = start + (end - start)/2
+- arr[mid] == key; return index mid
+- arr[mid] > key; BS(left, key)
+- arr[mid] < key; BS(right, key)
+------------------------------------------------------------------------------------------------------------------------------
 
 ** Order not know in binarySearch (means either array is ascending or descending is not known) ||
-    example Array: int arr[] = {10, 15, 20, 25, 30} | int descArr[] = {30, 25, 20, 15, 10};
-	- figure out array is in ascending or descending
-	- boolean isAscending = arr[start] < arr[descending]
-	- arr[mid] == key; return mid index
-	- arr[mid] > key
-		if (isAscending)
-			means search in left
-			BS(left, key)
-		else
-			means descending so search in right
-			BS(right, key)
-	- arr[mid] < key
-		if (isAscending)
-			means search in right
-			BS(right, key)
-		else
-			BS(left, key)
+   example Array: int arr[] = {10, 15, 20, 25, 30} | int descArr[] = {30, 25, 20, 15, 10};
+- figure out array is in ascending or descending
+- boolean isAscending = arr[start] < arr[descending]
+- arr[mid] == key; return mid index
+- arr[mid] > key
+	if (isAscending)
+		means search in left
+		BS(left, key)
+	else
+		means descending so search in right
+		BS(right, key)
+- arr[mid] < key
+	if (isAscending)
+		means search in right
+		BS(right, key)
+	else
+		BS(left, key)
       
 ---------------------------------------------------------------------------------------------------------------------------------
 
@@ -73,12 +73,12 @@ findPivot()
  
  now apply binary search
  
- int pivot = findPivot()
- if (pivot == -1) return -1
- else if (arr[pivot] == key) return pivot
- else if (arr[pivot] < key)
+ - int pivot = findPivot()
+ - if (pivot == -1) return -1
+ - else if (arr[pivot] == key) return pivot
+ - else if (arr[pivot] < key)
     // search in right BS(right, pivot+1)
- else if (arr[pivot] > key)
+ - else if (arr[pivot] > key)
     // search in left BS(left, pivot -1)
     
 ------------------------------------------------------------------------------------------------------------------------------------------------
@@ -98,5 +98,6 @@ findPivot()
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 
 ** count of element in sorted array
+  - count = last_occurence_pos - first_occurence_pos + 1
   
-  
+----------------------------------------------------------------------------------------------------------------------------------------   
