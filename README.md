@@ -101,3 +101,16 @@ findPivot()
   - count = last_occurence_pos - first_occurence_pos + 1
   
 ----------------------------------------------------------------------------------------------------------------------------------------   
+
+** Floor of a number
+- floor of a number is the largest number in the array which are smaller than or equal or key
+- example: {1,2,3,4,6,7,8} 
+- floor of 5 in this array is 4
+- floor of 3 in this array is 3
+- int index = 0;
+- mid = start + (end - start)/2
+- arr[mid] == key; index = mid; break;
+- arr[mid] > key; end = mid - 1
+- arr[mid] < key; start = mid + 1; index = mid
+- return arr[index]
+- 
