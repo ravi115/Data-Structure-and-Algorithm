@@ -2,21 +2,21 @@
 All Data Structure and Algorithm program.
 
 
-** Binary Search Algorithm
-
+1. **Binary Search Algorithms**
 -------------------------------------------------------------------------------------------------------------------------------
-** Binary search:
-- problem is to find key element by splting into array into two halfs. recursively/iteratively(left array | right array)
+**Binary search**:
+
+*Desc. problem is to find key element by splting into array into two halfs. recursively/iteratively(left array | right array)*
 - mid = start + (end - start)/2
 - arr[mid] == key; return index mid
 - arr[mid] > key; BS(left, key)
 - arr[mid] < key; BS(right, key)
 ------------------------------------------------------------------------------------------------------------------------------
 
-** Order not know in binarySearch (means either array is ascending or descending is not known) ||
-   example Array: int arr[] = {10, 15, 20, 25, 30} | int descArr[] = {30, 25, 20, 15, 10};
+*Desc. Order not know in binarySearch (means either array is ascending or descending is not known) ||
+   example Array: int arr[] = {10, 15, 20, 25, 30} | int descArr[] = {30, 25, 20, 15, 10};*
 - figure out array is in ascending or descending
-- boolean isAscending = arr[start] < arr[descending]
+- boolean isAscending = arr[start] < arr[end]
 - arr[mid] == key; return mid index
 - arr[mid] > key
 	if (isAscending)
@@ -34,7 +34,7 @@ All Data Structure and Algorithm program.
       
 ---------------------------------------------------------------------------------------------------------------------------------
 
-** Find fisrt and last element in binary search 
+*Desc. Find fisrt and last element in binary search* 
 int arr[] = {10, 15, 15, 15, 15, 15, 20, 25, 25, 25, 25, 30, 30};
 FirstOccurence()
   - apply BS
@@ -57,7 +57,7 @@ apply BS
  -  BS(right, key) 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
-** Find Element in rotated sorted array
+*Desc. Find Element in rotated sorted array*
 int[] arr2 = {15, 18, 2, 5, 6, 8, 11, 12}; || Key = 5; so index is at 3
 
 findPivot()
@@ -83,7 +83,7 @@ findPivot()
     
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
-** Nearly sorted array
+*Desc. Nearly sorted array*
   neary sorted array is the array whose element original position is shifted by 1 either towards left or right.
   example: sorted array {23, 25, 26, 30}  => nearly sorted array could be {23, 26, 25, 30} || {23, 25, 30, 26}
   
@@ -97,12 +97,12 @@ findPivot()
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 
-** count of element in sorted array
+*Desc. count of element in sorted array*
   - count = last_occurence_pos - first_occurence_pos + 1
   
 ----------------------------------------------------------------------------------------------------------------------------------------   
 
-** Floor of a number
+*Desc. Floor of a number*
 - floor of a number is the largest number in the array which are smaller than or equal or key
 - example: {1,2,3,4,6,7,8} 
 - floor of 5 in this array is 4
