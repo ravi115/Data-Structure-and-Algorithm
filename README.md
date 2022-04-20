@@ -121,8 +121,16 @@ findPivot()
 2. **Sorting Algorithm**
 
 a. *Bubble Sort (Sinking Sort)*
-- Compare two elementes and correct their position by swaping them. repeat until last element.
+- Compare two consecutive elementes and correct their position by swaping them. repeat until last element.
 - In first iteration the 0th position element will become sorted. 
 - Repeat this comparision for each index of the array.
-- *Optimization: use some boolean flag and set to true if no single elements are sorted and break the outer loop*.
+- *Optimization: use some boolean flag and set to true if no single elements are sorted and break the outer loop based on boolean flag being true*.
 - Best & Worst time complexity (n^2).  
+
+b. *Selection Sort*
+- In place sorting technique.
+- Logically devides array into two halves one sorted (left most) and unsorted (right most). but still no extra memory used here to allocate new array as it logically devides the array.
+- Example, if an array of size 4 is given then intially sorted will be of 0 element where as unsorted will be the whole array element which is of size 4.
+- We start from i = 0 to i < len(arr) and find the minimum one among them and put it left most which at i = 0; and then increment i++.
+- Bascially swap the minimum element with i=0 element in first iteration and then with i=2 in second iteration and so on... 
+- Best and Worst time complexity is (n^2).
