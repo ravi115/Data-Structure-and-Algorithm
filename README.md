@@ -132,5 +132,5 @@ b. *Selection Sort*
 - Logically devides array into two halves one sorted (left most) and unsorted (right most). but still no extra memory used here to allocate new array as it logically devides the array.
 - Example, if an array of size 4 is given then intially sorted will be of 0 element where as unsorted will be the whole array element which is of size 4.
 - We start from i = 0 to i < len(arr) and find the minimum one among them and put it left most which at i = 0; and then increment i++.
-- Bascially swap the minimum element with i=0 element in first iteration and then with i=2 in second iteration and so on... 
+- Bascially swap the minimum element with i=0 element in first iteration and then with i=1 in second iteration and so on... 
 - Best and Worst time complexity is (n^2).
