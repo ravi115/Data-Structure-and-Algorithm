@@ -113,4 +113,16 @@ findPivot()
 - arr[mid] > key; end = mid - 1
 - arr[mid] < key; start = mid + 1; index = mid
 - return arr[index]
-- 
+
+
+*****************************************************************************************************************************
+
+
+2. **Sorting Algorithm**
+
+a. *Bubble Sort (Sinking Sort)*
+- Compare two elementes and correct their position by swaping them. repeat until last element.
+- In first iteration the 0th position element will become sorted. 
+- Repeat this comparision for each index of the array.
+- *Optimization: use some boolean flag and set to true if no single elements are sorted and break the outer loop*.
+- Best & Worst time complexity (n^2).  
