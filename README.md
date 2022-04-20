@@ -134,3 +134,6 @@ b. *Selection Sort*
 - We start from i = 0 to i < len(arr) and find the minimum one among them and put it left most which at i = 0; and then increment i++.
 - Bascially swap the minimum element with i=0 element in first iteration and then with i=1 in second iteration and so on... 
 - Best and Worst time complexity is (n^2).
+
+c. *Bucket Sort (Bin Sort)*
+- 
