@@ -147,9 +147,9 @@ c. *Count Sort*
 - Note: This is not an inplace and comparision based sorting algorithm.
 - This works well with small rage of number given.
 - Step 1. find the range from given array.
-	- range = (min-elem of array - max-elem of array)
+	``` range = (min-elem of array - max-elem of array)
 - Step 2. Create an frequncy array of size range.
-	- int freq = new int[range + 1]
+	``` int freq = new int[range + 1]
 - Step 3. Iterate through the entire elem of array and update the frequency of each element in the frequency array.
 	``` i in arr:
 		int index = arr[i] - min;
