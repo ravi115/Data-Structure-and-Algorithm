@@ -166,7 +166,7 @@ c. *Count Sort*
 	i = arr.length; i >0; i--:
 		int index = arr[i] - min;
 		int idx = freq[index];
-		ans[idx] = arr[i];
+		ans[idx-1] = arr[i]; // this give element position but in array we should substract -1 in position to get the index
 		freq[index]--;
 - Step 7. copy the ans array into original arr.
 	``` 
