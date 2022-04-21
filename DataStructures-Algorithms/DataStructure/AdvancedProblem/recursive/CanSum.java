@@ -5,7 +5,7 @@ public class CanSum {
     static boolean canConstruct(int[] arr, int target) {
 
         if (target < 0) return false;
-        if (target == 0 ) return true;
+        if (target == 0) return true;
         for (int i = 0; i < arr.length; i++) {
             int result = target - arr[i];
             if (canConstruct(arr, result)) {

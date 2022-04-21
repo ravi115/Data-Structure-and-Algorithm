@@ -1,4 +1,6 @@
-package Trees;
+package trees;
+
+import AdvancedProblem.BinaryTree;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -38,7 +40,7 @@ public class BinarySearchTree {
 	 * @param key
 	 * @return
 	 */
-	public static boolean binarySearch(BinaryTree root, int key) { 
+	public static boolean binarySearch(BinaryTree root, int key) {
 	
 		if(root == null)
 			return false;
