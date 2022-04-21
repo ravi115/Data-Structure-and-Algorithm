@@ -121,6 +121,7 @@ findPivot()
 2. **Sorting Algorithm**
 
 a. *Bubble Sort (Sinking Sort)*
+- In place and comparison based sorting technique.
 - Compare two consecutive elementes and correct their position by swaping them. repeat until last element.
 - In first iteration the 0th position element will become sorted. 
 - Repeat this comparision for each index of the array.
@@ -128,12 +129,16 @@ a. *Bubble Sort (Sinking Sort)*
 - Best & Worst time complexity (n^2).  
 
 b. *Selection Sort*
-- In place sorting technique.
+- In place and comparison based sorting technique.
 - Logically devides array into two halves one sorted (left most) and unsorted (right most). but still no extra memory used here to allocate new array as it logically devides the array.
 - Example, if an array of size 4 is given then intially sorted will be of 0 element where as unsorted will be the whole array element which is of size 4.
-- We start from i = 0 to i < len(arr) and find the minimum one among them and put it left most which at i = 0; and then increment i++.
+- We start from i = 0 to i < len(arr) and find the minimum one among them and put it in left most which at i = 0; and then increment i++.
 - Bascially swap the minimum element with i=0 element in first iteration and then with i=1 in second iteration and so on... 
 - Best and Worst time complexity is (n^2).
 
-c. *Bucket Sort (Bin Sort)*
-- 
+c. *Insertion Sort (Bin Sort)*
+- In place and comparison based sorting technique.
+- We compare an element in array to all its left element and correct the position by swapping them based on min/max element depending on its sorting type (asc/desc).
+- repeat this steps for all the element in the array.
+- For example, we take first element and we leave it at 0th index as there are no other element in left of this element to be compared. then take second element and compare with 0th element as this is the only element towards left and comapre and swap their position. for third element start comparing with element from second towards 0th element and when we found min(in case of desc)/max(in case of asc) then stop there after swaping their position.
+- Worst and Average time complexity will be (n^2) but best case will be 0(n) if the element is already sorted. 
