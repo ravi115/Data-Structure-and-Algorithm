@@ -151,22 +151,26 @@ c. *Count Sort*
 - Step 2. Create an frequncy array of size range.
 	``` int freq = new int[range + 1];```
 - Step 3. Iterate through the entire elem of array and update the frequency of each element in the frequency array.
-	``` i in arr:
+	``` 
+	i in arr:
 		int index = arr[i] - min;
 		freq[index]++;
 - Step 4. Now update the ending index position of element in freq array which will be used to prepare final sorted array.
-	``` i=1 in freq:
+	``` 
+	i=1 in freq:
 		freq[i] = freq[i-1] + freq[i];
 - Step 5. Create an answer array of original size array.
 	``` int ans = new int[arr.length];```
 - Step 6. from end of ariginal array toward start, iterate throough each element in arr and find the index of the element from freq array and put the element into ans at that index and then update the freq array by decrementing the count.
-	``` i = arr.length; i >0; i--:
+	``` 
+	i = arr.length; i >0; i--:
 		int index = arr[i] - min;
 		int idx = freq[index];
 		ans[idx] = arr[i];
 		freq[index]--;
 - Step 7. copy the ans array into original arr.
-	``` for i in ans:
-		arr[i] = ans[i]
+	``` 
+	for i in ans:
+		arr[i] = ans[i] 
 
 			
