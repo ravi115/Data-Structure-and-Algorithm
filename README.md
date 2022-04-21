@@ -142,3 +142,31 @@ c. *Insertion Sort (Bin Sort)*
 - repeat this steps for all the element in the array.
 - For example, we take first element and we leave it at 0th index as there are no other element in left of this element to be compared. then take second element and compare with 0th element as this is the only element towards left and comapre and swap their position. for third element start comparing with element from second towards 0th element and when we found min(in case of desc)/max(in case of asc) then stop there after swaping their position.
 - Worst and Average time complexity will be (n^2) but best case will be 0(n) if the element is already sorted. 
+
+c. *Count Sort*
+- Note: This is not an inplace and comparision based sorting algorithm.
+- This works well with small rage of number given.
+- Step 1. find the range from given array.
+	- range = (min-elem of array - max-elem of array)
+- Step 2. Create an frequncy array of size range.
+	- int freq = new int[range + 1]
+- Step 3. Iterate through the entire elem of array and update the frequency of each element in the frequency array.
+	``` i in arr:
+		int index = arr[i] - min;
+		freq[index]++;
+- Step 4. Now update the ending index position of element in freq array which will be used to prepare final sorted array.
+	``` i=1 in freq:
+		freq[i] = freq[i-1] + freq[i];
+- Step 5. Create an answer array of original size array.
+	``` int ans = new int[arr.length]
+- Step 6. from end of ariginal array toward start, iterate throough each element in arr and find the index of the element from freq array and put the element into ans at that index and then update the freq array by decrementing the count.
+	``` i = arr.length; i >0; i--:
+		int index = arr[i] - min;
+		int idx = freq[index];
+		ans[idx] = arr[i];
+		freq[index]--;
+- Step 7. copy the ans array into original arr.
+	``` for i in ans:
+		arr[i] = ans[i]
+
+			
